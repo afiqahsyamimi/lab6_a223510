@@ -1,5 +1,9 @@
 <?php
 
+require_once 'core/controller.php';
+require_once 'core/database.php';
+require_once 'core/identifier.php';
+
 if (isset($_GET['url']))
     $url = explode('/', rtrim($_GET['url'], '/'));
 else
