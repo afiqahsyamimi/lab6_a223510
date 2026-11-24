@@ -177,9 +177,25 @@ if (!empty($errors)) {
             <td><?= $data['matricnum']; ?></td>
         </tr>
     </table>
-    </form>
+
+    <input type="hidden" name="matricnum" value="<?= $data['matricnum']; ?>">
+    <input type="hidden" name="name" value="<?= $data['name']; ?>">
+    <input type="hidden" name="age" value="<?= $data['age']; ?>">
+    <input type="hidden" name="gender" value="<?= $data['gender']; ?>">
+    <input type="hidden" name="address" value="<?= $data['address']; ?>">
+    <input type="hidden" name="email" value="<?= $data['email']; ?>">
+    <input type="hidden" name="dob" value="<?= $data['dob']; ?>">
+    <input type="hidden" name="height" value="<?= $data['height']; ?>">
+    <input type="hidden" name="phone" value="<?= $data['phone']; ?>">
+    <input type="hidden" name="color" value="<?= $data['color']; ?>">
+    <input type="hidden" name="fbtwig" value="<?= $data['fbtwig']; ?>">
+    <input type="hidden" name="photo" value="<?= $data['photo']; ?>">
+    <input type="hidden" name="university" value="<?= $data['university']; ?>">
+    <input type="hidden" name="biodata_validate" value="1">
     <hr>
     <input type="button" value="Back" onclick="history.back();">
     <input type="submit" value="Save My Biodata">
+    </form>
+
 </body>
 </html>
