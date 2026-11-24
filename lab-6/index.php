@@ -1,3 +1,6 @@
+<?php
+date_default_timezone_set('Asia/Kuala_Lumpur');
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,21 +11,20 @@
 </head>
 <body class="bg-light">
 
-    <div class="container mt-5">
-        <div class="card shadow">
-            <div class="card-body text-center">
-                <h1>My Guestbook</h1>
-
-                <p>
-                    Date: <?=  date("d-m-Y"); ?>
-                </p>
-
-                <p>
-                    Time: <?= date("h:i:s A") ?>
-                </p>
-
-                <a href="form.php" class="btn btn-primary">Add</a>
-                <a href="list.php" class="btn btn-success">List</a>
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-6 mx-auto">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4 p-md-5 text-center">
+                        <h1 class="h3 card-title mb-4">My Guestbook</h1>
+                        <p class="text-secondary mb-2">Date: <?= date("d-m-Y"); ?></p>
+                        <p class="text-secondary bm-4">Time: <?= date("H:i"); ?></p>
+                    <div>
+                    <a class="btn btn-primary me-2" href="form.php">Add</a>
+                    <a class="btn btn-outline-primary" href="list.php">List</a>
+                </div>
             </div>
         </div>
     </div>
+</div>
+</div>
