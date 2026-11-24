@@ -1,0 +1,97 @@
+<!--
+Matric Number: A223510
+Name: Afiqah Syamimi Binti Mohd Soufi
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab - 3: CSS</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            min-height: 100%;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #header {
+            background-color: pink;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #title {
+            color: white;
+            margin: 0;
+        }
+
+        #content {
+            padding: 20px;
+            flex: 1;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            text-align: center;
+        }
+
+        .button {
+            display: inline-block;
+            width: 180px;
+            padding: 12px 20px;
+            background-color: pink;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #e75480;
+        }
+
+        #footer {
+            background-color: pink;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            margin-top: auto;
+        }
+
+        #footnote {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        <h1 id="title">Lab - 3: CSS</h1>
+    </div>
+
+    <div id="content">
+        <a href="biodata.php" class="button">Biodata Page</a>
+
+        <a href="index.php" class="button">Guestbook System</a>
+    </div>
+
+    <div id="footer">
+        <span id="footnote">Web Programming</span>
+    </div>
+
+</body>
+</html>

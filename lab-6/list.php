@@ -51,9 +51,8 @@ foreach($result as $index => $row) {
       </blockquote>
     </div>
     <div>
-      <p>ID = <?= $row['id'] ?? 'NOT FOUND'; ?></p>
       <a href="edit.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-primary me-2">Edit</a>
-      <a href="delete.php?id=<?= $row['id'] ?>" class="btn btn-sm btn-outline-danger">Delete</a>
+      <a href="delete.php?id=<?= $row['id'] ?>" onclick="return confirm('Delete this entry?')" class="btn btn-sm btn-outline-danger">Delete</a>
     </div>
   </li>
 <?php
